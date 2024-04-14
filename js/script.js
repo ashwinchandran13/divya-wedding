@@ -24,7 +24,7 @@ $(document).on('click', function(){
     console.log('Kalyanathinu Verane!');
 });
 var audio = document.getElementById("my_audio");
-audio.volume = 0.009;
+audio.volume = 0.05;
 
 function toggleAudio() { 
     const element = document.getElementById("audio-id");
