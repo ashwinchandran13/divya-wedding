@@ -1,5 +1,5 @@
 /**
- * @author Sarthak Jain <sarthak240498@gmail.com>
+ * @author Ashwin Chandran <ashwinchandran13@gmail.com>
  */
 
 (function ($) {
