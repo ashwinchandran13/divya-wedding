@@ -488,8 +488,8 @@ body {
 	cursor: pointer;
 	background-color: #a7c3cd;
 	position: fixed;
-	opacity: 0.6;
-	padding: 1.8rem;
+	opacity: 0.4;
+	padding: 1.5rem;
 	background-color: #a7c3cd;
 	&:hover, :active {
 		opacity: 0.8;
