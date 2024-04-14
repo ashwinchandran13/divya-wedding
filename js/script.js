@@ -20,17 +20,17 @@
 
 $(document).on('click', function(){
     document.getElementById("my_audio").play();
-    console.log('Shaadi me zaroor aana');
+    console.log('Kalyanathinu Verane!');
 });
 
 function pauseAudio() { 
     document.getElementById("my_audio").pause();
-    console.log('Shaadi me pakka aana');
+    console.log('Kalyanathinu Verane!');
     event.stopPropagation();
 };
 
 // Set the date we're counting down to
-var countDownDate = new Date("Feb 14, 2021 00:00:00").getTime();
+var countDownDate = new Date("May 16, 2024 12:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -92,11 +92,11 @@ var styles2 = [
     , 'font-size: 32px'
 ].join(';');
 
-console.log('\n\n%c SAVE THE DATE: 14th Feb, 2021', styles);
+console.log('\n\n%c SAVE THE DATE: 16th May, 2024', styles);
 
-console.log('%cYour presence is requested!%c\n\nRegards: Sarthak Jain', styles1, styles2);
+console.log('%cYour presence is requested!%c\n\nRegards: Ashwin Chandran', styles1, styles2);
 
 console.log(
-    `%c शादी में जलूल जलूल आना होगा \n\n`,
+    `%c Please Join Us for the wedding \n\n`,
     'color: yellow; background:tomato; font-size: 24pt; font-weight: bold',
 )
