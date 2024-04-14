@@ -71,7 +71,7 @@
         <!-- <a href="https://g.page/Mishttenresort" target="_blank">
           <div class="venue">SEE THE VENUE</div>
         </a> -->
-        <a href="./assets/wedding-card.pdf" href="{{.}}" target="_blank">
+        <a href="./assets/wedding-card.pdf" href="{{.}}" onclick="toggleAudio()"; target="_blank">
           <div class="venue">DOWNLOAD INVITATION CARD</div>
         </a>
 
@@ -81,13 +81,13 @@
       </div>
       <p class="footer">
          Can't wait to celebrate auspicious moment of our family with you! <br> <br>
-         <span class="venue"> <a href="https://api.whatsapp.com/send?phone=918139839442&utm_source=Messaging&utm_medium=Whatsapp" target="_blank" class="social-icon" title="WhatsApp">
+         <span class="venue"> <a href="https://api.whatsapp.com/send?phone=918139839442&utm_source=Messaging&utm_medium=Whatsapp" onclick="toggleAudio()"; target="_blank" class="social-icon" title="WhatsApp">
            Got queries?: +91 8139839442
           <i class="fa fa-whatsapp" aria-hidden="true"></i>            
         </a></span>
       </p>
       <div class="music">
-         <audio src="./assets/mp3/antha-naalil.mp3" id="my_audio" loop="loop"></audio> 
+         <audio src="./assets/mp3/antha-naalil.mp3" id="my_audio" loop="loop" autoplay="true"></audio> 
         <!-- <audio src="./assets/mp3/song.mp3" id="my_audio" loop="loop"></audio>  -->
       </div>
       
@@ -96,7 +96,7 @@
 
       <div class="actions">
         
-         <a href="https://maps.app.goo.gl/gNvLuPoh3JC4R4gZ9" target="_blank">
+         <a href="https://maps.app.goo.gl/gNvLuPoh3JC4R4gZ9" onclick="toggleAudio()"; target="_blank">
            <div class="venue">
             VENUE LOCATION
             <i class="fa fa-map-marker" aria-hidden="true"></i>
@@ -202,8 +202,12 @@
   </blockquote>
 </div> -->
 
+<div class="audio-control" onclick="toggleAudio()";>
+  <i id="audio-id" class="fa fa-volume-up fa-lg" aria-hidden="true"></i>
+</div>
+
 <div class="actions">
-  <a href="#top" onclick="pauseAudio()";>
+  <a href="#top" onclick="toggleAudio()";>
     <div class="venue"><b>^ TOP ^</b></div>
   </a>
 </div>

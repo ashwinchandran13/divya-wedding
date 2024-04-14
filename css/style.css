@@ -479,6 +479,26 @@ body {
 	font-size: 20px;
 }
 
+#audio-id {
+	width: 1.2rem;
+	height: 0.5rem;
+}
+
+.audio-control {
+	cursor: pointer;
+	background-color: #a7c3cd;
+	position: fixed;
+	opacity: 0.6;
+	padding: 1.8rem;
+	background-color: #a7c3cd;
+	&:hover, :active {
+		opacity: 0.8;
+	}
+	border-radius: 50%;
+	bottom: 30px;
+	right: 30px;
+}
+
 .venue {
 	width: auto;
 	height: auto;

@@ -1,6 +1,7 @@
 /**
  * @author Sarthak Jain <sarthak240498@gmail.com>
  */
+
 (function ($) {
     "use strict";
       $('.sakura-falling').sakura('start', {
@@ -9,10 +10,10 @@
         
         ],                   // Horizontal movement animation names
         className: 'sakura', // Class name to use
-        fallSpeed: 2.5,        // Factor for petal fall speed
+        fallSpeed: 2.7,        // Factor for petal fall speed
         maxSize: 12,         // Maximum petal size
         minSize: 9,          // Minimum petal size
-        newOn: 250,          // Interval after which a new petal is added
+        newOn: 200,          // Interval after which a new petal is added
         
     });
 
@@ -22,9 +23,18 @@ $(document).on('click', function(){
     document.getElementById("my_audio").play();
     console.log('Kalyanathinu Verane!');
 });
+var audio = document.getElementById("my_audio");
+audio.volume = 0.009;
 
-function pauseAudio() { 
-    document.getElementById("my_audio").pause();
+function toggleAudio() { 
+    const element = document.getElementById("audio-id");
+    if (document.getElementById("my_audio").paused) {
+        document.getElementById("my_audio").play();
+        element.classList.replace("fa-volume-off", "fa-volume-up");
+    } else {
+        document.getElementById("my_audio").pause();
+        element.classList.replace("fa-volume-up", "fa-volume-off");
+    }
     console.log('Kalyanathinu Verane!');
     event.stopPropagation();
 };
