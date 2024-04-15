@@ -26,6 +26,19 @@ $(document).on('click', function(){
 var audio = document.getElementById("my_audio");
 audio.volume = 0.05;
 
+function handleVisibilityChange() {
+    const myAudio = document.getElementById("my_audio");
+    if (document.visibilityState === 'hidden') {
+      // Pause the audio when the tab becomes hidden
+      myAudio.pause();
+    } else {
+      // Resume the audio when the tab becomes visible again
+      myAudio.play();
+    }
+  }
+
+document.addEventListener('visibilitychange', handleVisibilityChange, false);
+
 function toggleAudio() { 
     const element = document.getElementById("audio-id");
     if (document.getElementById("my_audio").paused) {
