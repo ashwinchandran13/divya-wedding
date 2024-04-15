@@ -28,12 +28,11 @@ audio.volume = 0.05;
 
 function handleVisibilityChange() {
     const myAudio = document.getElementById("my_audio");
+    const element = document.getElementById("audio-id");
     if (document.visibilityState === 'hidden') {
       // Pause the audio when the tab becomes hidden
+      element.classList.replace("fa-volume-up", "fa-volume-off");
       myAudio.pause();
-    } else {
-      // Resume the audio when the tab becomes visible again
-      myAudio.play();
     }
   }
 
