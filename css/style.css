@@ -706,7 +706,7 @@ a {
 	width: 100%;
 	position: relative;
 	display: grid;
-	grid-template-columns: repeat(5, auto);
+	grid-template-columns: repeat(6, auto);
 	margin: 20px 0;
   }
   .wrapper section .item {
@@ -716,7 +716,7 @@ a {
   }
   .wrapper section .item:hover {
 	margin: 0 40px;
-	transform: scale(1.2);
+	transform: scale(2);
   }
   .wrapper section a {
 	position: absolute;
@@ -746,9 +746,14 @@ a {
 	a.arrow__btn {
 	  display: none;
 	}
-	.wrapper {
-		display: none;
+	.wrapper section {
+		grid-template-rows: repeat(2, auto) !important;
+		grid-template-columns: repeat(2, auto) !important;
 	}
+	.wrapper section .item:hover {
+		margin: 20px 30px;
+		transform: scale(2.4);
+	  }
 
 	.wrapper section .item {
 		max-width: 100%;
